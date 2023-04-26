@@ -66,7 +66,7 @@ if uploaded_files is not None:
     else:
         pass
 if dfs:
-    data = pd.read_excel('C:/Users/busse/OneDrive/Desktop/rennengehenstreamlit/streamlit-main/TestDataFinal.xlsx')
+    data = pd.read_excel('TestDataFinal.xlsx')
     df = pd.DataFrame(data)
     shuffled_df = df.sample(frac=1)
     # st.write(df)
