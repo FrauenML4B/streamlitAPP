@@ -74,7 +74,7 @@ if dfs:
     X = shuffled_df.drop('target', axis=1)
     y = shuffled_df["target"]
     # st.write(y)
-    X_train, X_test, y_train, y_test = sk.model_selection.train_test_split(X, y, test_size=0.5)
+    X_train, X_test, y_train, y_test = sk.model_selection.train_test_split(X, y, test_size=0.2)
     clf = RandomForestClassifier(n_estimators=100)
     clf.fit(X, y)
     pred1 = clf.predict(merged_df2)
